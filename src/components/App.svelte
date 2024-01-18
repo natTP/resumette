@@ -28,9 +28,9 @@
 </script>
 
 <!-- Remove this is you does not want Kofi widget on your site -->
-{#if intro.github == 'narze'}
+<!-- {#if intro.github == 'narze'}
 	<Kofi name={intro.github} />
-{/if}
+{/if} -->
 
 <header class="web-only text-center p-4 sm:p-6 bg-purple-400 text-white w-screen font-9">
 	<h1 class="text-4xl">Resumette</h1>
@@ -49,88 +49,104 @@
 <main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl font-9">
 	<Intro {...intro} />
 
-	<section>
-		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Skills and Technologies</h2>
-			<hr />
-			<ul class="text-left list-disc pl-8">
-				{#each technologies as tech}
-					<Hideable>
-						<li>
-							<span class="w-28 inline-block">{tech.section}</span>
-							<span>{tech.details}</span>
-						</li>
-					</Hideable>
-				{/each}
-			</ul>
-		</Hideable>
-	</section>
-
-	<section>
-		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
-			<hr />
-
-			<ul class="text-left list-disc pl-8">
-				{#each educations as edu}
-					<Hideable>
-						<li>
-							<strong>{edu.head}</strong>, {edu.details}
-						</li>
-					</Hideable>
-				{/each}
-			</ul>
-		</Hideable>
-	</section>
-
-	<section>
-		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Work Experience</h2>
-			<hr />
-
-			{#each workExperiences as exp}
-				<Work {...exp} />
-			{/each}
-		</Hideable>
-	</section>
-
-	<section>
-		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Projects</h2>
-			<hr />
-
-			<ul class="text-left list-disc pl-8">
-				{#each projects as project}
-					<Hideable hide={project.hide}>
-						<li>
-							<strong>{project.name}</strong>
-							- {project.details}
-							<a href="https://{project.url}" target="_blank" rel="noreferrer"
-								><strong>{project.url}</strong></a
-							>
-						</li>
-					</Hideable>
-				{/each}
-			</ul>
-		</Hideable>
-	</section>
-
-	<section>
-		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Extracurricular Activities</h2>
-			<hr />
-
-			<ul class="text-left list-disc pl-8">
-				{#each activities as activity}
-					<Hideable>
-						<li>
-							{activity}
-						</li>
-					</Hideable>
-				{/each}
-			</ul>
-		</Hideable>
-	</section>
+	<div class="grid grid-cols-3 gap-x-6">
+		<aside class="col-span-1">
+			<section>
+				<Hideable>
+					<h2 class="text-2xl print:text-4xl uppercase text-left">Skills and Technologies</h2>
+					<hr />
+					<ul class="text-left list-disc pl-8">
+						{#each technologies as tech}
+							<Hideable>
+								<li class="mb-4">
+									<span class="font-bold">{tech.section}</span>
+									<ul>
+										{#each tech.details as item}
+											<li>
+												{item}
+											</li>
+										{/each}
+									</ul>
+								</li>
+							</Hideable>
+						{/each}
+					</ul>
+				</Hideable>
+			</section>
+			<section>
+				<Hideable>
+					<h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
+					<hr />
+		
+					<ul class="text-left list-disc pl-8">
+						{#each educations as edu}
+							<Hideable>
+								<li class="mb-2">
+									<strong>{edu.head}</strong>, {edu.details}
+								</li>
+							</Hideable>
+						{/each}
+					</ul>
+				</Hideable>
+			</section>
+		</aside>
+	
+		<div class="col-span-2">
+			<section>
+				<Hideable>
+					<h2 class="text-2xl print:text-4xl uppercase text-left">Work Experience</h2>
+					<hr />
+		
+					{#each workExperiences as exp}
+						<Work {...exp} />
+					{/each}
+				</Hideable>
+			</section>
+		
+			<!-- TODO Add date *and role* to projects and extracurriculars -->
+			<section>
+				<Hideable>
+					<h2 class="text-2xl print:text-4xl uppercase text-left">Projects</h2>
+					<hr />
+		
+					<ul class="text-left list-disc pl-8">
+						{#each projects as project}
+							<Hideable hide={project.hide}>
+								<li>
+									<strong>{project.name}</strong>
+									- {project.details}
+									<a href="https://{project.url}" target="_blank" rel="noreferrer"
+										><strong>{project.url}</strong></a
+									>
+								</li>
+							</Hideable>
+						{/each}
+					</ul>
+				</Hideable>
+			</section>
+		
+			<section>
+				<Hideable>
+					<h2 class="text-2xl print:text-4xl uppercase text-left">Extracurricular Activities</h2>
+					<hr />
+		
+					<ul class="text-left list-disc pl-8">
+						{#each activities as activity}
+							<Hideable hide={activity.hide}>
+								<li>
+									<strong>{activity.name}</strong>
+									- {activity.details}
+									<a href="https://{activity.url}" target="_blank" rel="noreferrer"
+										><strong>{activity.url}</strong></a
+									>
+								</li>
+							</Hideable>
+						{/each}
+					</ul>
+				</Hideable>
+			</section>
+		</div>
+	</div>
 
 	<footer class="print-only">
 		(See <a href={fullVersionLink} target="_blank" rel="noopener">full version</a>
@@ -189,9 +205,11 @@
 			@apply mt-0 mb-1;
 		}
 
+
 		main {
 			margin: 0 0;
 			padding: 0;
 		}
+	
 	}
 </style>

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Hideable from "./Hideable.svelte";
+
 	export let name: string = 'Foo';
 	export let nickname: string = '';
 	export let phone: string = '';
@@ -11,9 +13,15 @@
 
 <div class="flex flex-wrap flex-col sm:flex-row print:flex-row text-sm sm:text-base">
 	<div class="flex-1 text-left sm:py-4 w-48">
-		<p><a href={`tel:${phone}`}>{phone}</a></p>
-		<p><a href={`mailto:${email}`}>{email}</a></p>
-		<p>{location}</p>
+		<Hideable>
+			<p><a href={`tel:${phone}`}>{phone}</a></p>
+		</Hideable>
+		<Hideable>
+			<p><a href={`mailto:${email}`}>{email}</a></p>
+		</Hideable>
+		<Hideable>
+			<p>{location}</p>
+		</Hideable>
 	</div>
 
 	<h2
@@ -24,17 +32,23 @@
 	</h2>
 
 	<div class="flex-1 text-left sm:text-right print:text-right sm:py-4 w-48 text-sm sm:text-base">
-		<p>
-			<a href={`https://github.com/${github}`} target="_blank" rel="noreferrer"
+		<Hideable>
+			<p>
+				<a href={`https://github.com/${github}`} target="_blank" rel="noreferrer"
 				>github.com/{github}</a
-			>
-		</p>
-		<p>
-			<a href={`https://${website}`} target="_blank" rel="noreferrer">{website}</a>
-		</p>
-		<p>
-			<a href={`https://linkedin.com/in/${linkedin}`} target="_blank" rel="noreferrer">Linkedin</a>
-		</p>
+				>
+			</p>
+		</Hideable>
+		<Hideable>
+			<p>
+				<a href={`https://${website}`} target="_blank" rel="noreferrer">{website}</a>
+			</p>
+		</Hideable>
+		<Hideable>	
+			<p>
+				<a href={`https://linkedin.com/in/${linkedin}`} target="_blank" rel="noreferrer">Linkedin</a>
+			</p>
+		</Hideable>
 	</div>
 </div>
 
