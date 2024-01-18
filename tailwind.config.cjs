@@ -14,6 +14,7 @@ const config = {
 				'Cantarell',
 				'Open Sans',
 				'Helvetica Neue',
+				'Lato',
 				'sans-serif'
 			],
 			screens: {
