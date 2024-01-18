@@ -11,67 +11,183 @@
 	},
 	"technologies": [
 		{
+			"section": "Technical Skills:",
+			"details": [
+				"Web Development, focusing on Front-end",
+				"Interface Design",
+				"JavaScript",
+				"Python",
+				"Java",
+				"C++"
+			]
+		},
+		{
+			"section": "Frameworks, Tools & Libraries:",
+			"details": [
+				"React",
+				"NextJS",
+				"TailwindCSS",
+				"Three.js",
+				"Express",
+				"MongoDB",
+				"Docker",
+				"Git"
+			]
+		},
+		{
+			"section": "Design & Multimedia Skills:",
+			"details": [
+				"UX/UI Design (Figma)",
+				"Graphic Design (Adobe Photoshop & Illustrator)",
+				"Video Editing (Adobe After Effects)",
+				"Digital & Traditional Illustration"
+			]
+		},
+		{
 			"section": "Languages:",
-			"details": "Ruby, JavaScript, Node.js (strong). TypeScript, SQL (proficient)."
-		},
-		{
-			"section": "Frameworks:",
-			"details": "Ruby on Rails, ReactJS, NextJS, NestJS, SvelteJS, TailwindCSS, Bootstrap"
-		},
-		{
-			"section": "Tools:",
-			"details": "Git, Terraform, Docker, Kubernetes, Helm, ArgoCD, FluxCD, Robot Framework, Selenium, Zsh, GitHub Codespaces"
-		},
-		{
-			"section": "Other:",
-			"details": "AWS, GCP, Firebase, Vercel, DigitalOcean, Cloud66, Github Actions, CircleCI, CloudFlare"
+			"details": ["Thai (Native)", "English (Native)", "Japanese (JLPT N3)"]
 		}
 	],
 	"educations": [
 		{
-			"head": "B.Eng. Computer Engineering",
-			"details": "Chulalongkorn University, TH. 2007-2010 (GPA 3.45)"
+			"head": "B.Eng. Computer Engineering, Chulalongkorn University",
+			"details": "2019-2023 (GPA 3.86)"
+		},
+		{
+			"head": "Mahidol Wittayanusorn School",
+			"details": "2016-2019 (GPA 3.99)"
+		}
+	],
+	"workExperiences": [
+		{
+			"position": "Software Engineer Internship",
+			"company": "THiNKNET Co., Ltd.",
+			"url": "https://www.thinknet.co.th/",
+			"years": ["June 2022", "December 2022"],
+			"details": [
+				"Developed and designed the architecture of the company's internal products.",
+				"Participated in Frontend Development with NextJS and Backend with Express."
+			]
+		},
+		{
+			"position": "UX/UI Design Internship",
+			"company": "Seven Peaks Software",
+			"url": "https://sevenpeakssoftware.com/",
+			"years": ["June 2021", "July 2021"],
+			"details": [
+				"Designed new features for a mobile app on both Android and iOS, taking into account the design systems and standards of each platform.",
+				"Achieved a high satisfactory product by coordinating closely with the client and refining the design per request."
+			]
 		}
 	],
 	"projects": [
 		{
-			"name": "ChatOS",
+			"name": "Manba Kogen Lodge Promotional Website (Web Designer & Content)",
+			"date": "",
+			"role": "",
+			"details": "Hackable chatbot web application",
+			"url": "chat.narze.live",
+			"hide": false
+		},
+		{
+			"name": "CEDT Internship Portal (UX/UI Designer)",
+			"date": "",
+			"role": "",
+			"details": "Hackable chatbot web application",
+			"url": "chat.narze.live",
+			"hide": false
+		},
+		{
+			"name": "CU Get Reg (Co-founder & UX/UI Designer)",
+			"date": "",
+			"role": "",
+			"details": "Hackable chatbot web application",
+			"url": "chat.narze.live",
+			"hide": false
+		},
+		{
+			"name": "Personal Blog",
+			"date": "",
+			"role": "",
+			"details": "Hackable chatbot web application",
+			"url": "chat.narze.live",
+			"hide": false
+		},
+		{
+			"name": "Senior Project",
+			"date": "",
+			"role": "",
+			"details": "Hackable chatbot web application",
+			"url": "chat.narze.live",
+			"hide": false
+		},
+		{
+			"name": "Raindrop Simulator",
+			"date": "",
+			"role": "",
+			"details": "Hackable chatbot web application",
+			"url": "chat.narze.live",
+			"hide": false
+		},
+		{
+			"name": "Operation Bifrost",
+			"date": "",
+			"role": "",
 			"details": "Hackable chatbot web application",
 			"url": "chat.narze.live",
 			"hide": false
 		}
 	],
-	"workExperiences": [
-		{
-			"position": "Web Developer",
-			"company": "Figabyte",
-			"url": "https://www.facebook.com/figabyte",
-			"years": ["2011", "2014"],
-			"details": [
-				"Developed more than 20 Facebook web apps with CodeIgniter, using Facebook API",
-				"Developed web platform using Ruby on Rails 3 & 4",
-				"Made iOS apps for several clients using PhoneGap and RubyMotion"
-			]
-		},
-		{
-			"position": "Part-time Web Developer",
-			"company": "Wongnai Media (wongnai.com)",
-			"url": "https://wongnai.com",
-			"years": ["2010"],
-			"details": [
-				"Developed a small part of website using Java with Spring MVC Framework built with Apache Maven",
-				"Learned TDD practice & making early-stage startup"
-			]
-		}
-	],
 
 	"activities": [
-		"Areas : Coding, Productivity & Life-hacks, Mechanical Keyboards",
-		"Typing : 120+ words per minute (Colemak Mod-DH layout)",
-		"Games : Music games, FPS, MOBA, Puzzle",
-		"Music : EDM, Rock, Japanese",
-		"Remote working is a OK. I extensively use self time tracking app for all my works.",
-		"Pets : I have 3 dogs"
+		{
+			"name": "ChatOS",
+			"date": "",
+			"role": "",
+			"details": "Hackable chatbot web application",
+			"url": "chat.narze.live",
+			"hide": false
+		},
+		{
+			"name": "ChatOS",
+			"date": "",
+			"role": "",
+			"details": "Hackable chatbot web application",
+			"url": "chat.narze.live",
+			"hide": false
+		},
+		{
+			"name": "ChatOS",
+			"date": "",
+			"role": "",
+			"details": "Hackable chatbot web application",
+			"url": "chat.narze.live",
+			"hide": false
+		},
+		{
+			"name": "ChatOS",
+			"date": "",
+			"role": "",
+			"details": "Hackable chatbot web application",
+			"url": "chat.narze.live",
+			"hide": false
+		},
+		{
+			"name": "ChatOS",
+			"date": "",
+			"role": "",
+			"details": "Hackable chatbot web application",
+			"url": "chat.narze.live",
+			"hide": false
+		},
+		{
+			"name": "ChatOS",
+			"date": "",
+			"role": "",
+			"details": "Hackable chatbot web application",
+			"url": "chat.narze.live",
+			"hide": false
+		}
 	],
 	"resumeUrl": {
 		"sourceLink": "https://github.com/natTP/resumette",
