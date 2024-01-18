@@ -15,7 +15,7 @@
 		technologies = [],
 		workExperiences = [],
 		educations = [],
-		interests = [],
+		activities = [],
 		resumeUrl: { sourceLink = '', fullVersionLink = '' } = {}
 	} = profile || {});
 
@@ -32,7 +32,7 @@
 	<Kofi name={intro.github} />
 {/if}
 
-<header class="web-only text-center p-4 sm:p-6 bg-green-400 text-white w-screen">
+<header class="web-only text-center p-4 sm:p-6 bg-purple-400 text-white w-screen font-9">
 	<h1 class="text-4xl">Resumette</h1>
 	<h3>
 		<button on:click={() => window.print()} class="underline text-lg">[Print]</button>
@@ -46,12 +46,12 @@
 	<a href={dataLink} target="_blank" rel="noopener">[Data]</a>
 </header>
 
-<main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
+<main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl font-9">
 	<Intro {...intro} />
 
 	<section>
 		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Technologies and Languages</h2>
+			<h2 class="text-2xl print:text-4xl uppercase text-left">Skills and Technologies</h2>
 			<hr />
 			<ul class="text-left list-disc pl-8">
 				{#each technologies as tech}
@@ -117,14 +117,14 @@
 
 	<section>
 		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Interests</h2>
+			<h2 class="text-2xl print:text-4xl uppercase text-left">Extracurricular Activities</h2>
 			<hr />
 
 			<ul class="text-left list-disc pl-8">
-				{#each interests as interest}
+				{#each activities as activity}
 					<Hideable>
 						<li>
-							{interest}
+							{activity}
 						</li>
 					</Hideable>
 				{/each}
@@ -152,7 +152,7 @@
 	}
 
 	section h2 {
-		@apply font-semibold;
+		@apply font-bold;
 	}
 
 	section hr {
