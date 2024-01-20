@@ -49,7 +49,7 @@
 <main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl font-9">
 	<Intro {...intro} />
 
-	<div class="grid grid-cols-3 gap-x-6">
+	<div class="md:grid print:grid grid-cols-3 gap-x-6">
 		<aside class="col-span-1">
 			<section>
 				<Hideable>
@@ -103,7 +103,6 @@
 				</Hideable>
 			</section>
 		
-			<!-- TODO Add date *and role* to projects and extracurriculars -->
 			<section>
 				<Hideable>
 					<h2 class="text-2xl print:text-4xl uppercase text-left">Projects</h2>
@@ -112,33 +111,15 @@
 					<ul class="text-left list-disc pl-8">
 						{#each projects as project}
 							<Hideable hide={project.hide}>
-								<li>
+								<li class="mb-2">
 									<strong>{project.name}</strong>
 									- {project.details}
-									<a href="https://{project.url}" target="_blank" rel="noreferrer"
+									<em>
+										{project.role}
+									</em>
+									<a href="https://{project.url}" target="_blank" rel="noreferrer" class="ml-2"
 										><strong>{project.url}</strong></a
-									>
-								</li>
-							</Hideable>
-						{/each}
-					</ul>
-				</Hideable>
-			</section>
-		
-			<section>
-				<Hideable>
-					<h2 class="text-2xl print:text-4xl uppercase text-left">Extracurricular Activities</h2>
-					<hr />
-		
-					<ul class="text-left list-disc pl-8">
-						{#each activities as activity}
-							<Hideable hide={activity.hide}>
-								<li>
-									<strong>{activity.name}</strong>
-									- {activity.details}
-									<a href="https://{activity.url}" target="_blank" rel="noreferrer"
-										><strong>{activity.url}</strong></a
-									>
+									> 
 								</li>
 							</Hideable>
 						{/each}
@@ -146,6 +127,32 @@
 				</Hideable>
 			</section>
 		</div>
+		
+		<section class="col-span-full">
+			<Hideable>
+				<h2 class="text-2xl print:text-4xl uppercase text-left">Extracurricular Activities</h2>
+				<hr />
+	
+				<ul class="text-left list-disc pl-8">
+					{#each activities as activity}
+						<Hideable hide={activity.hide}>
+							<li class="mb-2">
+								<div class="flex ">
+									<strong class="text-left">{activity.name}</strong>
+									<a href="https://{activity.url}" target="_blank" rel="noreferrer"
+										><strong>{activity.url}</strong></a
+									>
+									<div class="flex-1 text-right font-bold">
+										{activity.date.join('-')}
+									</div>
+								</div>
+								{activity.details}
+							</li>
+						</Hideable>
+					{/each}
+				</ul>
+			</Hideable>
+		</section>
 	</div>
 
 	<footer class="print-only">

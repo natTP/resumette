@@ -6,15 +6,16 @@
 		"email": "nattamon.polv@gmail.com",
 		"github": "natTP",
 		"linkedin": "nattamon-polvichai",
-		"location": "Bangkok, Thailand",
+		"location": "Nonthaburi, Thailand",
 		"website": "blog.nattp.page"
 	},
 	"technologies": [
 		{
 			"section": "Technical Skills:",
 			"details": [
-				"Web Development, focusing on Front-end",
-				"Interface Design",
+				"Web Development (focusing on Frontend)",
+				"UX/UI Design",
+				"Computer Vision",
 				"JavaScript",
 				"Python",
 				"Java",
@@ -25,9 +26,10 @@
 			"section": "Frameworks, Tools & Libraries:",
 			"details": [
 				"React",
-				"NextJS",
+				"NextJS, Gatsby",
 				"TailwindCSS",
 				"Three.js",
+				"OpenCV",
 				"Express",
 				"MongoDB",
 				"Docker",
@@ -51,7 +53,7 @@
 	"educations": [
 		{
 			"head": "B.Eng. Computer Engineering, Chulalongkorn University",
-			"details": "2019-2023 (GPA 3.86)"
+			"details": "2019-2023 (GPA 3.86 / 1st Class Honors)"
 		},
 		{
 			"head": "Mahidol Wittayanusorn School",
@@ -60,12 +62,24 @@
 	],
 	"workExperiences": [
 		{
+			"position": "Japan Internship Program",
+			"company": "METI Government of Japan",
+			"url": "https://internshipprogram.go.jp/english/",
+			"years": ["Oct", "Dec 2023"],
+			"details": [
+				"Selected to participate in the Japan Internship Program 2023 hosted by the Ministry of Economy Trade and Industry (METI) of Japan, a program to find foreign talents to work with local businesses on-site in Japan for 2 months. Selected from 10,000 applicants across Asian countries.",
+				"Worked at Manba Kogen Lodge, a local guesthouse in northern Hyogo province.",
+				"Designed the promotional website and implemented it with the website builder Wix.",
+				"Wrote copywriting and website content in English and translated the website to Thai."
+			]
+		},
+		{
 			"position": "Software Engineer Internship",
 			"company": "THiNKNET Co., Ltd.",
 			"url": "https://www.thinknet.co.th/",
-			"years": ["June 2022", "December 2022"],
+			"years": ["Jun", "Dec 2022"],
 			"details": [
-				"Developed and designed the architecture of the company's internal products.",
+				"Developed and designed the architecture of internal products for the job-hunting platform JobThai.",
 				"Participated in Frontend Development with NextJS and Backend with Express."
 			]
 		},
@@ -73,7 +87,7 @@
 			"position": "UX/UI Design Internship",
 			"company": "Seven Peaks Software",
 			"url": "https://sevenpeakssoftware.com/",
-			"years": ["June 2021", "July 2021"],
+			"years": ["Jun", "Jul 2021"],
 			"details": [
 				"Designed new features for a mobile app on both Android and iOS, taking into account the design systems and standards of each platform.",
 				"Achieved a high satisfactory product by coordinating closely with the client and refining the design per request."
@@ -82,111 +96,111 @@
 	],
 	"projects": [
 		{
-			"name": "Manba Kogen Lodge Promotional Website (Web Designer & Content)",
-			"date": "",
-			"role": "",
-			"details": "Hackable chatbot web application",
-			"url": "chat.narze.live",
+			"name": "CEDT Internship Portal",
+			"date": ["Aug 2023", "Nov 2023"],
+			"role": "UX/UI Designer",
+			"details": "Internal system for students to discover and apply to internships facilitated by Chulalongkorn University's Computer Engineering Department.",
+			"url": "cedtintern.cp.eng.chula.ac.th",
 			"hide": false
 		},
 		{
-			"name": "CEDT Internship Portal (UX/UI Designer)",
-			"date": "",
-			"role": "",
-			"details": "Hackable chatbot web application",
-			"url": "chat.narze.live",
+			"name": "CU Get Reg",
+			"date": ["Feb 2021", "Present"],
+			"role": "Co-founder & UX/UI Designer",
+			"details": "A student-run planning tool for Chulalongkorn University's course registration, used widely by more than 36,000 students. This product aggregates course data from multiple sources to one place, with additional features such as course searching, filtering, reviews, and automatic class timetable visualization.",
+			"url": "cugetreg.com",
 			"hide": false
 		},
 		{
-			"name": "CU Get Reg (Co-founder & UX/UI Designer)",
-			"date": "",
+			"name": "natTP Blog",
+			"date": [],
 			"role": "",
-			"details": "Hackable chatbot web application",
-			"url": "chat.narze.live",
+			"details": "Personal writing space designed to reflect Nattamon's identity. Made with Gatsby and TailwindCSS and uses Strapi as the backend CMS. Made assets and illustration. Posts articles on literature, art, and dev/design.",
+			"url": "blog.nattp.page",
 			"hide": false
 		},
 		{
-			"name": "Personal Blog",
-			"date": "",
+			"name": "Fixed Assets Tracking System using NFC Technology",
+			"date": ["Aug 2022", "May 2023"],
 			"role": "",
-			"details": "Hackable chatbot web application",
-			"url": "chat.narze.live",
+			"details": "Senior Project, a new feature of the existing asset tracking application VERSCAN.",
+			"url": "",
 			"hide": false
 		},
 		{
-			"name": "Senior Project",
-			"date": "",
+			"name": "Droplet Simulation with Three.js",
+			"date": ["Oct 2022"],
 			"role": "",
-			"details": "Hackable chatbot web application",
-			"url": "chat.narze.live",
-			"hide": false
-		},
-		{
-			"name": "Raindrop Simulator",
-			"date": "",
-			"role": "",
-			"details": "Hackable chatbot web application",
-			"url": "chat.narze.live",
+			"details": "Attempting to simulate the appearance and motion of liquid droplets on a smooth ramped surface from scratch.",
+			"url": "github.com/natTP/droplet-flow-simulation",
 			"hide": false
 		},
 		{
 			"name": "Operation Bifrost",
-			"date": "",
+			"date": ["Jun 2021", "Present"],
+			"role": "Project Lead, Translator, Proofreader",
+			"details": "A mod translating the Japanese Visual Novel game STEINS;GATE into Thai.",
+			"url": "www.facebook.com/learningtranslator",
+			"hide": false
+		},
+		{
+			"name": "Detection of Abandoned Objects in Surveillance Video to Prevent Bombing Situations",
+			"date": ["2017", "2019"],
 			"role": "",
-			"details": "Hackable chatbot web application",
-			"url": "chat.narze.live",
+			"details": "High School Senior Project, proposed a method of detecting abandoned objects using OpenCV, then classifying the risk level of each object using Bayesian Machine Learning.",
+			"url": "",
 			"hide": false
 		}
 	],
 
 	"activities": [
 		{
-			"name": "ChatOS",
-			"date": "",
+			"name": "Core Team at Thinc.",
+			"date": ["Aug 2019", "Jun 2023"],
 			"role": "",
-			"details": "Hackable chatbot web application",
-			"url": "chat.narze.live",
+			"details": "A student run organization which aims to make impact to the university and society, while facilitating a learning environment through university-scale software development projects. Lead in organizing tech-related events and web development projects.",
+			"url": "",
 			"hide": false
 		},
 		{
-			"name": "ChatOS",
-			"date": "",
+			"name": "Core Team, 19th Young Webmaster Camp and 12th Junior Webmaster Camp",
+			"date": ["May 2022", "July 2023"],
 			"role": "",
-			"details": "Hackable chatbot web application",
-			"url": "chat.narze.live",
+			"details": "In charge of brand identity, graphic & web design, marketing, and media relations. Run operations as staff on the event date.",
+			"url": "",
 			"hide": false
 		},
 		{
-			"name": "ChatOS",
-			"date": "",
+			"name": "UX/UI Designer, Student Government of Chulalongkorn University",
+			"date": ["Jun 2020", "Jun 2022"],
 			"role": "",
-			"details": "Hackable chatbot web application",
-			"url": "chat.narze.live",
+			"details": "Designed websites to be used as a part of Student Government activities, such as registration systems, online interactive experiences, and blogs. Guided junior members in the team, and oversaw the finished products of each project. Took part in front-end development with React.",
+			"url": "",
 			"hide": false
 		},
 		{
-			"name": "ChatOS",
-			"date": "",
+			"name": "Frontend Developer, Engineering Student Committee",
+			"date": ["Apr 2021", "Apr 2022"],
 			"role": "",
-			"details": "Hackable chatbot web application",
-			"url": "chat.narze.live",
+			"details": "Designed and developed systems to assist the ESC's activities, including a registration system and room reservation system, with React.",
+			"url": "",
 			"hide": false
 		},
 		{
-			"name": "ChatOS",
-			"date": "",
+			"name": "CU Chorus",
+			"date": ["Aug 2019", "May 2021"],
 			"role": "",
-			"details": "Hackable chatbot web application",
-			"url": "chat.narze.live",
-			"hide": false
+			"details": "Member of Chulalongkorn University Chorus Club and core team in the academic year 2020, in charge of public relations.",
+			"url": "",
+			"hide": true
 		},
 		{
-			"name": "ChatOS",
-			"date": "",
+			"name": "CU Pen Club",
+			"date": ["Aug 2019", "May 2023"],
 			"role": "",
-			"details": "Hackable chatbot web application",
-			"url": "chat.narze.live",
-			"hide": false
+			"details": "Member of Chulalongkorn University Literature Club (also known as CU Pen Club) and core team in the academic years 2020-2021. Participated in club activites as writer, illustrator, editor, and organized literary events.",
+			"url": "",
+			"hide": true
 		}
 	],
 	"resumeUrl": {

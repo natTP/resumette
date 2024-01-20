@@ -23,7 +23,7 @@ export interface IIntro {
 
 export interface IProject {
 	name: string;
-	date: string;
+	date: string[];
 	role: string;
 	details: string;
 	url: string;
