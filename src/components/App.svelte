@@ -53,6 +53,22 @@
 		<aside class="col-span-1">
 			<section>
 				<Hideable>
+					<h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
+					<hr />
+		
+					<ul class="text-left list-disc pl-8">
+						{#each educations as edu}
+							<Hideable>
+								<li class="mb-2">
+									<strong>{edu.head}</strong>, {edu.details}
+								</li>
+							</Hideable>
+						{/each}
+					</ul>
+				</Hideable>
+			</section>
+			<section>
+				<Hideable>
 					<h2 class="text-2xl print:text-4xl uppercase text-left">Skills and Technologies</h2>
 					<hr />
 					<ul class="text-left list-disc pl-8">
@@ -67,22 +83,6 @@
 											</li>
 										{/each}
 									</ul>
-								</li>
-							</Hideable>
-						{/each}
-					</ul>
-				</Hideable>
-			</section>
-			<section>
-				<Hideable>
-					<h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
-					<hr />
-		
-					<ul class="text-left list-disc pl-8">
-						{#each educations as edu}
-							<Hideable>
-								<li class="mb-2">
-									<strong>{edu.head}</strong>, {edu.details}
 								</li>
 							</Hideable>
 						{/each}
