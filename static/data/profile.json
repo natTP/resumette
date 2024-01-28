@@ -41,7 +41,7 @@
 			"details": [
 				"UX/UI Design (Figma)",
 				"Graphic Design (Adobe Photoshop & Illustrator)",
-				"Video Editing (Adobe After Effects)",
+				"Video Editing (Adobe Premiere Pro)",
 				"Digital & Traditional Illustration"
 			]
 		},
@@ -123,8 +123,8 @@
 			"name": "Fixed Assets Tracking System using NFC Technology",
 			"date": ["Aug 2022", "May 2023"],
 			"role": "",
-			"details": "Senior Project, a new feature of the existing asset tracking application VERSCAN.",
-			"url": "",
+			"details": "Senior Project, a new feature of the existing asset tracking application VERSCAN, in collaboration with House of Dev Technology.",
+			"url": "https://www.houseofdev.tech/productsandservices/verscan",
 			"hide": false
 		},
 		{
@@ -158,7 +158,7 @@
 			"name": "Core Team at Thinc.",
 			"date": ["Aug 2019", "Jun 2023"],
 			"role": "",
-			"details": "A student run organization which aims to make impact to the university and society, while facilitating a learning environment through university-scale software development projects. Lead in organizing tech-related events and web development projects.",
+			"details": "Lead in organizing tech-related events and university-scale software development projects as a student run organization.",
 			"url": "",
 			"hide": false
 		},
@@ -190,7 +190,7 @@
 			"name": "CU Chorus",
 			"date": ["Aug 2019", "May 2021"],
 			"role": "",
-			"details": "Member of Chulalongkorn University Chorus Club and core team in the academic year 2020, in charge of public relations.",
+			"details": "Member of Chulalongkorn University Chorus Club. Core team in the academic year 2020, in charge of public relations.",
 			"url": "",
 			"hide": true
 		},
@@ -198,7 +198,7 @@
 			"name": "CU Pen Club",
 			"date": ["Aug 2019", "May 2023"],
 			"role": "",
-			"details": "Member of Chulalongkorn University Literature Club (also known as CU Pen Club) and core team in the academic years 2020-2021. Participated in club activites as writer, illustrator, editor, and organized literary events.",
+			"details": "Member of Chulalongkorn University Literature Club (also known as CU Pen Club). Core team in the academic years 2020-2021. Participated in club activites as writer, illustrator, editor, and organized literary events.",
 			"url": "",
 			"hide": true
 		}
