@@ -51,7 +51,7 @@
 
 	<div class="md:grid print:grid grid-cols-3 gap-x-6">
 		<aside class="col-span-1">
-			<section>
+			<section class="pb-2">
 				<Hideable>
 					<h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
 					<hr />
