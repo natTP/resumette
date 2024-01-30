@@ -13,7 +13,7 @@
 		{
 			"section": "Technical Skills:",
 			"details": [
-				"Web Development (focusing on Frontend)",
+				"Web Development (focusing on front-end)",
 				"UX/UI Design",
 				"Computer Vision",
 				"JavaScript",
@@ -125,7 +125,7 @@
 			"date": ["Aug 2022", "May 2023"],
 			"role": "",
 			"details": "Senior Project, a new feature of the existing asset tracking application VERSCAN, in collaboration with House of Dev Technology.",
-			"url": "https://www.houseofdev.tech/productsandservices/verscan",
+			"url": "houseofdev.tech/productsandservices/verscan",
 			"hide": false
 		},
 		{
@@ -141,7 +141,7 @@
 			"date": ["Jun 2021", "Present"],
 			"role": "Project Lead, Translator, Proofreader",
 			"details": "A mod translating the Japanese Visual Novel game STEINS;GATE into Thai.",
-			"url": "www.facebook.com/learningtranslator",
+			"url": "facebook.com/learningtranslator",
 			"hide": false
 		},
 		{
@@ -159,7 +159,7 @@
 			"name": "Core Team at Thinc.",
 			"date": ["Aug 2019", "Jun 2023"],
 			"role": "",
-			"details": "Lead in organizing tech-related events and university-scale software development projects as a student run organization.",
+			"details": "Lead in organizing tech-related events and university-scale software development projects as a student-run organization.",
 			"url": "",
 			"hide": false
 		},
